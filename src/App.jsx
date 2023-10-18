@@ -1,5 +1,5 @@
 import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar/Navbar"
+import { Outlet } from "react-router-dom"
 
 
 
@@ -7,8 +7,9 @@ function App() {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Outlet></Outlet>
       <Footer></Footer>
+      
     </div>
   )
 }

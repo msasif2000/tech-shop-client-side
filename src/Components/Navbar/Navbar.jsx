@@ -1,6 +1,6 @@
 import bg from '../../assets/images/bg-3.png'
 import logo from '../../assets/images/logo.avif'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
 
 const nvS = {
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <Link to="/login" className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Login</Link>
                 </div>
             </div>
         </div>
