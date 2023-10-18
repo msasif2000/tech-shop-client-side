@@ -1,0 +1,60 @@
+[
+    {
+       "id":1,
+       "name":"iPhone 13 mini",
+       "price":899.9,
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam cum ipsam facere atque voluptatum explicabo nostrum quibusdam amet nisi, quam praesentium minus.",
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+       "id":2,
+       "name":"iPhone 13 Pro",
+       "price":799.9,
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam cum ipsam facere atque voluptatum explicabo nostrum quibusdam amet nisi, quam praesentium minus.",
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+    },
+    {
+        "id":3,
+       "name":"iPhone 13 Pro Max",
+       "price":709.9,
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam cum ipsam facere atque voluptatum explicabo nostrum quibusdam amet nisi, quam praesentium minus.",
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg"
+    },
+    {
+        "id":4,
+       "name":"iPhone 13",
+       "price":699.9,
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam cum ipsam facere atque voluptatum explicabo nostrum quibusdam amet nisi, quam praesentium minus.",
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+    },
+    {
+        "id":5,
+       "name":"iPhone 12 Pro Max",
+       "price":599.9,
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam cum ipsam facere atque voluptatum explicabo nostrum quibusdam amet nisi, quam praesentium minus.",
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg"
+    },
+ ]
+
+
+
+
+
+ //samsung
+ {"status":true,"data":[{"brand":"Samsung ","phone_name":"Galaxy S22 5G","slug":"samsung_galaxy_s22_5g-11253","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8+","slug":"samsung_galaxy_tab_s8+-11342","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-plus.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8 Ultra","slug":"samsung_galaxy_tab_s8_ultra-11274","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-ultra.jpg"},{"brand":"Samsung ","phone_name":"Galaxy S22+ 5G","slug":"samsung_galaxy_s22+_5g-11252","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-plus-5g.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8","slug":"samsung_galaxy_tab_s8-11343","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8.jpg"},{"brand":"Samsung ","phone_name":"Galaxy S21 FE 5G","slug":"samsung_galaxy_s21_fe_5g-10954","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-fe-5g.jpg"}]}
+
+
+
+
+ //oppo
+ {"brand":"Oppo ","phone_name":"Find X5","slug":"oppo_find_x5-11378","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg"},{"brand":"Oppo ","phone_name":"Find X5 Pro","slug":"oppo_find_x5_pro-11236","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg"},{"brand":"Oppo ","phone_name":"Find X5 Lite","slug":"oppo_find_x5_lite-11323","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-lite.jpg"},{"brand":"Oppo ","phone_name":"Pad","slug":"oppo_pad-11322","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-pad.jpg"},{"brand":"Oppo ","phone_name":"A76","slug":"oppo_a76-11367","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-a36.jpg"},{"brand":"Oppo ","phone_name":"Reno7 5G","slug":"oppo_reno7_5g-11350","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-reno7.jpg"},{"brand":"Oppo ","phone_name":"A96","slug":"oppo_a96-11316","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-a96.jpg"},{"brand":"Oppo ","phone_name":"Reno6 Lite","slug":"oppo_reno6_lite-11196","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-reno6-lite.jpg"}
+
+
+ //ipad, watch
+ [{"brand":"Apple ","phone_name":"iPhone 13 mini","slug":"apple_iphone_13_mini-11104","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"},{"brand":"Apple ","phone_name":"iPad mini (2021)","slug":"apple_ipad_mini_(2021)-11105","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-2021.jpg"},{"brand":"Apple ","phone_name":"Watch Series 7 Aluminum","slug":"apple_watch_series_7_aluminum-11107","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-aluminum.jpg"},{"brand":"Apple ","phone_name":"iPhone 12 mini","slug":"apple_iphone_12_mini-10510","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg"},{"brand":"Apple ","phone_name":"Watch Series 6 Aluminum","slug":"apple_watch_series_6_aluminum-10447","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-watch-s6.jpg"},{"brand":"Apple ","phone_name":"Watch Series 5 Aluminum","slug":"apple_watch_series_5_aluminum-9858","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-watch-aluminum-series-5.jpg"},{"brand":"Apple ","phone_name":"iPad mini (2019)","slug":"apple_ipad_mini_(2019)-9637","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-2019.jpg"},{"brand":"Apple ","phone_name":"Watch Series 4 Aluminum","slug":"apple_watch_series_4_aluminum-9322","image":"https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-aluminum.jpg"},{"brand":"Huawei ","phone_name":"Watch Fit mini","slug":"huawei_watch_fit_mini-11176","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-mini.jpg"}]
+
+ "brand":"Huawei ","phone_name":"Watch Fit mini","slug":"huawei_watch_fit_mini-11176","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-mini.jpg"},{"brand":"Huawei ","phone_name":"Watch GT Runner","slug":"huawei_watch_gt_runner-11227","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-gt-runner.jpg"},{"brand":"Huawei ","phone_name":"Watch 3 Pro","slug":"huawei_watch_3_pro-10941","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-3-pro.jpg"},{"brand":"Huawei ","phone_name":"Watch 3","slug":"huawei_watch_3-10940","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-3.jpg"},{"brand":"Huawei ","phone_name":"Watch Fit Elegant","slug":"huawei_watch_fit_elegant-10794","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-elegant.jpg"},{"brand":"Huawei ","phone_name":"Watch GT 2 Porsche Design","slug":"huawei_watch_gt_2_porsche_design-10554","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-gt2-porshe1.jpg"},{"brand":"Oppo ","phone_name":"Watch 2","slug":"oppo_watch_2-11026","image":"https://fdn2.gsmarena.com/vv/bigpic/oppo-watch-2.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Watch4 Classic","slug":"samsung_galaxy_watch4_classic-11046","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch4-classic.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Watch4","slug":"samsung_galaxy_watch4-11045","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch4.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Watch3","slug":"samsung_galaxy_watch3-10315","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch3.jpg"}
+
+
+ //tab
+ "brand":"Samsung ","phone_name":"Galaxy Tab S8+","slug":"samsung_galaxy_tab_s8+-11342","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-plus.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8 Ultra","slug":"samsung_galaxy_tab_s8_ultra-11274","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-ultra.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8","slug":"samsung_galaxy_tab_s8-11343","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A8 10.5 (2021)","slug":"samsung_galaxy_tab_a8_10_5_(2021)-11265","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a8-105-2021-new.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A7 Lite","slug":"samsung_galaxy_tab_a7_lite-10933","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a7-lite.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7 FE","slug":"samsung_galaxy_tab_s7_fe-10922","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-fe.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab Active3","slug":"samsung_galaxy_tab_active3-10476","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-active3.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A7 10.4 (2020)","slug":"samsung_galaxy_tab_a7_10_4_(2020)-10411","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a7-104-2020.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7+","slug":"samsung_galaxy_tab_s7+-10336","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-plus1.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7","slug":"samsung_galaxy_tab_s7-10337","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg"}
