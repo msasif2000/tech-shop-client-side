@@ -1,3 +1,12 @@
+Brand image link => 
+https://i.ibb.co/7NtkQMq/OPPO.png
+https://i.ibb.co/7R6FbCB/sams.png
+https://i.ibb.co/Yc6YWYZ/Huawei.png
+https://i.ibb.co/QPDvhr5/apple.png
+https://i.ibb.co/swx9SzP/hp.png
+https://i.ibb.co/LvNcm2C/Asus.png
+
+
 [
     {
        "id":1,
@@ -58,3 +67,8 @@
 
  //tab
  "brand":"Samsung ","phone_name":"Galaxy Tab S8+","slug":"samsung_galaxy_tab_s8+-11342","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-plus.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8 Ultra","slug":"samsung_galaxy_tab_s8_ultra-11274","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8-ultra.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S8","slug":"samsung_galaxy_tab_s8-11343","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s8.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A8 10.5 (2021)","slug":"samsung_galaxy_tab_a8_10_5_(2021)-11265","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a8-105-2021-new.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A7 Lite","slug":"samsung_galaxy_tab_a7_lite-10933","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a7-lite.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7 FE","slug":"samsung_galaxy_tab_s7_fe-10922","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-fe.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab Active3","slug":"samsung_galaxy_tab_active3-10476","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-active3.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab A7 10.4 (2020)","slug":"samsung_galaxy_tab_a7_10_4_(2020)-10411","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-a7-104-2020.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7+","slug":"samsung_galaxy_tab_s7+-10336","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-plus1.jpg"},{"brand":"Samsung ","phone_name":"Galaxy Tab S7","slug":"samsung_galaxy_tab_s7-10337","image":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg"}
+
+ //huawei
+ {"brand":"Huawei ","phone_name":"Enjoy 20e","slug":"huawei_enjoy_20e-11177","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20e.jpg"},{"brand":"Huawei ","phone_name":"P50 Pocket","slug":"huawei_p50_pocket-11280","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pocket.jpg"},{"brand":"Huawei ","phone_name":"nova 8 SE 4G","slug":"huawei_nova_8_se_4g-11247","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se.jpg"},{"brand":"Huawei ","phone_name":"Watch GT 3","slug":"huawei_watch_gt_3-11171","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-gt3-new.jpg"},{"brand":"Huawei ","phone_name":"Watch Fit mini","slug":"huawei_watch_fit_mini-11176","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-mini.jpg"},{"brand":"Huawei ","phone_name":"Watch GT Runner","slug":"huawei_watch_gt_runner-11227","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-gt-runner.jpg"},{"brand":"Huawei ","phone_name":"nova Y60","slug":"huawei_nova_y60-11328","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y60.jpg"},{"brand":"Huawei ","phone_name":"nova 9 Pro","slug":"huawei_nova_9_pro-11120","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-pro-5g-.jpg"},{"brand":"Huawei ","phone_name":"nova 9","slug":"huawei_nova_9-11121","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-5g.jpg"},
+
+ 

@@ -39,8 +39,12 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/blogs">Recent Blogs</NavLink></li>
-        <li><NavLink to="/about">About us</NavLink></li>
+        {
+            user ? 
+            <li><NavLink to="/addBrand">Add Brand</NavLink></li>
+            :
+            ' '
+        }
     </>
 
 
