@@ -19,7 +19,7 @@ const Products = () => {
         <div>
             <Navbar></Navbar>
             <div style={bgStyle}>
-                <div className="md:container mx-auto">
+                <div className="md:container mx-auto py-6">
                     <h2 className="font-rancho text-3xl py-4">All Products are here: </h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                         {
