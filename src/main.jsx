@@ -14,6 +14,7 @@ import Home from './Components/Home/Home';
 import AddBrand from './ProductManagement/AddBrand';
 import PrivateRoute from './Components/Private/PrivateRoute';
 import AddProduct from './ProductManagement/AddProduct';
+import Products from './ProductManagement/Products';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5001/brands')
+        loader: () => fetch('http://localhost:5001/brands'),
       },
       {
         path: '/login',
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: '/addProduct', 
         element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+      },
+      {
+        path: '/products', 
+        element: <Products></Products>,
+        loader: () => fetch('http://localhost:5001/products')
       }
       
     ]

@@ -1,7 +1,12 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import bg from '../assets/images/cool-1.svg'
+import bg from '../assets/images/cool-1.svg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddProduct = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
     const bgStyle = {
         background: `url(${bg})`,
         backgroundSize: 'cover',
@@ -22,6 +27,26 @@ const AddProduct = () => {
 
         const newProduct = { productName, price, ratings, brandName, type, details, photo };
         console.log(newProduct);
+
+        fetch('http://localhost:5001/products', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                toast.success("Brand Added Successfully!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                });
+
+
+                setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/');
+                }, 2000);
+            })
 
     }
     return (
@@ -102,7 +127,7 @@ const AddProduct = () => {
                             </div>
                             <input type="submit" value="Add Product" className="w-full mt-6 bg-orange-600 text-white border-black border-2 text-center p-2 font-rancho text-2xl" />
                         </form>
-
+                        <ToastContainer></ToastContainer>
                     </div>
                 </div>
             </div>

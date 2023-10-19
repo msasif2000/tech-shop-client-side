@@ -39,6 +39,7 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/products">Products</NavLink></li>
         {
             user ? 
             <li><NavLink to="/addBrand">Add Brand</NavLink></li>
@@ -78,12 +79,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end  md:gap-2 gap-1">
-                    {
+                    {/* {
                         user ?
                             <h1 className="text-xl font-bold text-blue-600 flex lg:flex hidden">{user.email}</h1>
                             :
                             ''
-                    }
+                    } */}
                     {
                         user ?
                             <>
