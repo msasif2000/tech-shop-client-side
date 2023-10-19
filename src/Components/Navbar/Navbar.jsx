@@ -45,6 +45,12 @@ const Navbar = () => {
             :
             ' '
         }
+        {
+            user ? 
+            <li><NavLink to="/addProduct">Add Product</NavLink></li>
+            :
+            ' '
+        }
     </>
 
 
