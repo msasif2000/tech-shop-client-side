@@ -3,14 +3,18 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineEye, AiTwotoneEdit, AiOutlineDelete } from "react-icons/ai";
 import Swal from 'sweetalert2'
 import ReactStarsRating from 'react-awesome-stars-rating';
+import { useContext } from 'react';
+import { AuthContext } from '../Components/Provider/AuthProvider';
 
 
 const ProductCard = ({ product, products, setProducts }) => {
+
+    const {user} = useContext(AuthContext);
     const { productName, price, ratings, photo, _id } = product;
 
     const location = useLocation();
     const navigate = useNavigate();
-    console.log(ratings)
+    //console.log(ratings)
     const handleDelete = (_id) => {
         console.log(_id);
         Swal.fire({
@@ -57,9 +61,19 @@ const ProductCard = ({ product, products, setProducts }) => {
                 </div>
                 <div>
                     <div className="flex gap-4 items-center justify-center">
-                        <button className="bg-[#D2B48C] p-2 rounded"><AiOutlineEye className='text-white'></AiOutlineEye></button>
-                        <Link to={`/updateProduct/${_id}`}><button className="bg-green-600 p-2 rounded"><AiTwotoneEdit className='text-white'></AiTwotoneEdit></button></Link>
-                        <button onClick={() => handleDelete(_id)} className="bg-red-500 p-2 rounded"><AiOutlineDelete className='text-white'></AiOutlineDelete></button>
+                        <Link to={`/productDetails/${_id}`}><button className="bg-[#D2B48C] p-2 rounded"><AiOutlineEye className='text-white'></AiOutlineEye></button></Link>
+                        {
+                            user? 
+                            <Link to={`/updateProduct/${_id}`}><button className="bg-green-600 p-2 rounded"><AiTwotoneEdit className='text-white'></AiTwotoneEdit></button></Link>
+                            :
+                            <Link to={`/login`}><button className="bg-green-600 p-2 rounded"><AiTwotoneEdit className='text-white'></AiTwotoneEdit></button></Link>
+                        }
+                        {
+                            user?
+                            <button onClick={() => handleDelete(_id)} className="bg-red-500 p-2 rounded"><AiOutlineDelete className='text-white'></AiOutlineDelete></button>
+                            :
+                            <Link to={`/login`}><button className="bg-red-500 p-2 rounded"><AiOutlineDelete className='text-white'></AiOutlineDelete></button></Link>
+                        }
                     </div>
                 </div>
             </div>

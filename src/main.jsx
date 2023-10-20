@@ -15,8 +15,11 @@ import AddBrand from './ProductManagement/AddBrand';
 import PrivateRoute from './Components/Private/PrivateRoute';
 import AddProduct from './ProductManagement/AddProduct';
 import Products from './ProductManagement/Products';
-import BrandProduct from './ProductManagement/brandProduct';
 import UpdateProduct from './ProductManagement/UpdateProduct';
+import BrandProducts from './ProductManagement/Product/BrandProducts';
+import ProductDetails from './ProductManagement/ProductDetails';
+
+
 
 const router = createBrowserRouter([
   {
@@ -56,10 +59,20 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5001/products/${params.id}`)
       },
       {
-        path: '/brands/:brandName',
-        element: <BrandProduct></BrandProduct>,
+        path: '/brands/:bName',
+        element: <BrandProducts></BrandProducts>,
         loader: () => fetch('http://localhost:5001/products')
-      }
+      },
+      {
+        path: '/productDetails/:id',
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5001/products/${params.id}`)
+      },
+      // {
+      //   path: '/images/:bName',
+      //   element: <BrandCarousel></BrandCarousel>,
+      //   loader: ({params}) => fetch(`http://localhost:5001/images/${params.bName}`)
+      // }
     ]
   },
 ]);

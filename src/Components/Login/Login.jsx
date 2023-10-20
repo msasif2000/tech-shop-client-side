@@ -110,7 +110,7 @@ const Login = () => {
                                     </div>
                                 </div>
                                 <label className="label">
-                                    <p>Don`t have an Account?<Link to="/register" className="underline">Register</Link></p>
+                                    <p>Don`t have an Account? <Link to="/register" className="underline">Register</Link></p>
                                 </label>
                             </form>
                         </div>

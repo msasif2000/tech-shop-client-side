@@ -7,6 +7,27 @@ https://i.ibb.co/swx9SzP/hp.png
 https://i.ibb.co/LvNcm2C/Asus.png
 
 
+
+https://i.ibb.co/f97hSh9/sam-2.jpg
+https://i.ibb.co/FqYbKQn/sam-3.jpg
+https://i.ibb.co/k2tn36Z/sam-1.jpg
+https://i.ibb.co/5vgXZTn/hp-2.jpg
+https://i.ibb.co/DYqnJRP/hp-3.jpg
+https://i.ibb.co/1sk00RG/hua-1.jpg
+https://i.ibb.co/3BfvQ2v/hua-2.jpg
+https://i.ibb.co/Hpd3dh2/hua-3.jpg
+https://i.ibb.co/GV7xX4p/apple-1.jpg
+https://i.ibb.co/Cw3xB4W/apple-2.jpg
+https://i.ibb.co/1ddYPzf/apple-3.jpg
+https://i.ibb.co/zPv7m6q/asus-2.jpg
+https://i.ibb.co/gJMRy2W/asus-3.jpg
+https://i.ibb.co/6v89tWW/asusu-1.jpg
+https://i.ibb.co/jDkSf1S/hp-1.jpg
+https://i.ibb.co/80Bq6SH/oppo-2.jpg
+https://i.ibb.co/VwPXSJs/oppo-3.jpg
+https://i.ibb.co/ZxkzgsC/oppo-1.jpg
+
+
 [
     {
        "id":1,
@@ -72,3 +93,4 @@ https://i.ibb.co/LvNcm2C/Asus.png
  {"brand":"Huawei ","phone_name":"Enjoy 20e","slug":"huawei_enjoy_20e-11177","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20e.jpg"},{"brand":"Huawei ","phone_name":"P50 Pocket","slug":"huawei_p50_pocket-11280","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pocket.jpg"},{"brand":"Huawei ","phone_name":"nova 8 SE 4G","slug":"huawei_nova_8_se_4g-11247","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se.jpg"},{"brand":"Huawei ","phone_name":"Watch GT 3","slug":"huawei_watch_gt_3-11171","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-gt3-new.jpg"},{"brand":"Huawei ","phone_name":"Watch Fit mini","slug":"huawei_watch_fit_mini-11176","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-fit-mini.jpg"},{"brand":"Huawei ","phone_name":"Watch GT Runner","slug":"huawei_watch_gt_runner-11227","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-gt-runner.jpg"},{"brand":"Huawei ","phone_name":"nova Y60","slug":"huawei_nova_y60-11328","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y60.jpg"},{"brand":"Huawei ","phone_name":"nova 9 Pro","slug":"huawei_nova_9_pro-11120","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-pro-5g-.jpg"},{"brand":"Huawei ","phone_name":"nova 9","slug":"huawei_nova_9-11121","image":"https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-5g.jpg"},
 
  
+
