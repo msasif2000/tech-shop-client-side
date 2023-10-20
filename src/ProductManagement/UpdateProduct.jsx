@@ -63,7 +63,7 @@ const UpdateProduct = () => {
             <div style={bgStyle}>
                 <div className="md-container lg:mx-24 md:mx-6 mx-2">
                     <div className="lg:p-12 md:p-6 p-4 space-y-6">
-                        <h2 className="font-rancho text-4xl text-center text-white">Update a Product</h2>
+                        <h2 className="font-rancho text-4xl text-center text-white">Update {productName}</h2>
                         <form onSubmit={handleUpdateProduct} className="font-raleway ">
                             <div className="md:flex gap-8 justify-center">
                                 <div className="md:w-1/2">

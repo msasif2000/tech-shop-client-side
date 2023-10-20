@@ -16,10 +16,10 @@ const ProductDetails = () => {
             <Navbar></Navbar>
             <div style={bgStyle}>
                 <div className="md:container mx-auto">
-                    <div className="md:flex items-center justify-center gap-8 p-8">
-                        <img src={product.photo} alt="" className="h-[400px] rounded-lg" />
+                    <div className="md:flex items-center justify-center md:gap-8 p-8">
+                        <img src={product.photo} alt="" className="h-[400px] rounded-lg md:mx-0 mx-auto" />
                         <div className="text-white">
-                            <p className="font-rancho text-4xl text-center pt-2">{product.productName} Details</p>
+                            <p className="font-rancho text-4xl text-center pt-2">{product.productName}</p>
                             <div className="overflow-x-auto">
                                 <table className="table">
                                     <thead>

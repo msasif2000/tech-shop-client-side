@@ -19,8 +19,8 @@ const Products = () => {
         <div>
             <Navbar></Navbar>
             <div style={bgStyle}>
-                <div className="md:container mx-auto py-6">
-                    <h2 className="font-rancho text-3xl py-4">All Products are here: </h2>
+                <div className="md:container mx-auto px-4 py-6">
+                    <h2 className="font-rancho text-3xl py-4">Your Desired Products are here: </h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                         {
                            loadedProducts.map(product => <ProductCard key={product._id} product={product} products={products} setProducts={setProducts}></ProductCard>)

@@ -7,7 +7,7 @@ const BrandCard = ({ brand }) => {
         <Link to={`/brands/${brandName}`}>
             <div className='bg-orange-300 p-2 rounded shadow-2xl' >
                 <img src={brandLogo} alt="" className='h-[100px] w-[100px]' />
-                {/* <h2 className='text-bold font-rancho text-center'>{brandName}</h2> */}
+                <h2 className='text-bold font-rancho text-center text-orange-600 font-bold'>{brandName}</h2>
             </div>
         </Link>
     );

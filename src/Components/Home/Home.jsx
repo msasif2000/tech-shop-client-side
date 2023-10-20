@@ -20,8 +20,8 @@ const Home = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <div className="md:container mx-auto text-center font-rancho text-3xl mt-8">
-                <h2>Our Branded Products</h2>
-                <div className="flex md:flex-col-4 flex-col-2 p-4 gap-6 items-center justify-center">
+                <h2 className="border-2 border-black p-2 shadow-2xl shadow-orange-300">Our Branded Products</h2>
+                <div className="flex flex-wrap md:flex-col-4 flex-col-3 p-4 gap-6 items-center justify-center">
                     {
                         brands.map(brand => <BrandCard key={brand._id} brand={brand}></BrandCard>)
                     }
