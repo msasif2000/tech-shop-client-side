@@ -24,7 +24,7 @@ const AddBrand = () => {
         const newBrand = { brandName, brandLogo };
         console.log(newBrand);
 
-        fetch('http://localhost:5001/brands', {
+        fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/brands', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

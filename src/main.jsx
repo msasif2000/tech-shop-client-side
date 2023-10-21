@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5001/brands'),
+        loader: () => fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/brands'),
       },
       {
         path: '/login',
@@ -52,27 +52,27 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: <Products></Products>,
-        loader: () => fetch('http://localhost:5001/products')
+        loader: () => fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products')
       },
       {
         path: '/updateProduct/:id',
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5001/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products/${params.id}`)
       },
       {
         path: '/brands/:bName',
         element: <BrandProducts></BrandProducts>,
-        loader: () => fetch('http://localhost:5001/products')
+        loader: () => fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products')
       },
       {
         path: '/productDetails/:id',
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5001/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products/${params.id}`)
       },
       {
         path: '/cart/:email',
         element: <Cart></Cart>,
-        loader: ({params}) => fetch(`http://localhost:5001/addToCart/${params.email}`)
+        loader: ({ params }) => fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/addToCart/${params.email}`)
       }
     ]
   },

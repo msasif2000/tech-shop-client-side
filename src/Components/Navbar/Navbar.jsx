@@ -20,7 +20,7 @@ const Navbar = () => {
     
     const [cart, setCart] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5001/addToCart/${currenMail}`)
+        fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/addToCart/${currenMail}`)
             .then(res => res.json())
             .then(data => {
                 setCart(data);
@@ -97,8 +97,8 @@ const Navbar = () => {
                             {
 
                                 <div className="indicator">
-                                    <span className={cart.length ? 'indicator-item badge badge-sm badge-secondary' : ' '}></span>
-                                    <div className="grid rounded-full p-2 bg-base-300 place-items-center"><AiOutlineShoppingCart className='text-2xl'></AiOutlineShoppingCart></div>
+                                    <span className={cart.length ? 'indicator-item badge badge-sm badge-secondary top-1 right-1' : ' '}></span>
+                                    <div className="grid rounded-full p-2 bg-sky-300 place-items-center"><AiOutlineShoppingCart className='text-2xl'></AiOutlineShoppingCart></div>
                                 </div>
 
                             }

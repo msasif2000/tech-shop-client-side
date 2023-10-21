@@ -23,7 +23,7 @@ const BrandProducts = () => {
 
     const [images, setImages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5001/images')
+        fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/images')
             .then(res => res.json())
             .then(data => {
                 setImages(data);
@@ -73,10 +73,6 @@ const BrandProducts = () => {
                             <SwiperSlide><img src={img_2} alt="" className="md:w-2/3 w-full md:h-[450px] h-[250px] mx-auto shadow-2xl shadow-blue-600" /></SwiperSlide>
                             <SwiperSlide><img src={img_3} alt="" className="md:w-2/3 w-full md:h-[450px] h-[250px] mx-auto shadow-2xl shadow-blue-600" /></SwiperSlide>
                         </Swiper>
-                        {/* {img_1 && <img src={img_1} alt="" />}
-                    {img_2 && <img src={img_2} alt="" />}
-                    {img_3 && <img src={img_3} alt="" />} */}
-
                     </div>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-20">
                         {

@@ -7,7 +7,7 @@ import { useState } from "react";
 const Products = () => {
     const loadedProducts = useLoaderData();
     const [products, setProducts] = useState(loadedProducts);
-    //console.log(products);
+    console.log(products);
 
     const bgStyle = {
         background: `url(${bg})`,

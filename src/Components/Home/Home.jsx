@@ -4,14 +4,15 @@ import bg from '../../assets/images/bg-3.png';
 import { Link, useLoaderData } from "react-router-dom";
 import BrandCard from "../../ProductManagement/BrandCard";
 import { useEffect, useState } from "react";
-import ProductCard from "../../ProductManagement/ProductCard";
+import FeaturedCard from "../../ProductManagement/FeaturedCard";
 
 const Home = () => {
     const brands = useLoaderData();
 
     const [products, setProducts] = useState([]);
+
     useEffect(() => {
-        fetch('http://localhost:5001/products')
+        fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -36,7 +37,7 @@ const Home = () => {
                 <h2 className="border-2 border-black p-2 text-3xl font-rancho shadow-2xl shadow-orange-300">Our Branded Products</h2>
                 <div className="flex flex-wrap md:flex-col-4 flex-col-3 p-4 gap-6 items-center justify-center">
                     {
-                        brands.map(brand => <BrandCard key={brand._id} brand={brand}></BrandCard>)
+                        brands?.map(brand => <BrandCard key={brand._id} brand={brand}></BrandCard>)
                     }
                 </div>
 
@@ -44,7 +45,7 @@ const Home = () => {
                     <h2 className="border-2 border-black text-3xl font-rancho p-2 shadow-2xl shadow-orange-300">Our Featured Products</h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-4">
                         {
-                            ratedProducts.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                            ratedProducts.map(prod => <FeaturedCard key={prod._id} prod={prod}></FeaturedCard>)
                         }
                     </div>
                     <div className="py-8">

@@ -7,11 +7,11 @@
     border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
     &:hover{
-        background-color: #ffffff;
+        background-color: #e22020;
         color: #1e04e2;
     }
 }
 .sty a.active{
     text-decoration: underline;
-    color: #ffffff;
+    color: #d62929;
 }

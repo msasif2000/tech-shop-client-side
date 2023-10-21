@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import bg from '../assets/images/cool-background.png'
 import { useContext } from "react";
@@ -6,6 +6,9 @@ import { AuthContext } from "../Components/Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const ProductDetails = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const bgStyle = {
         background: `url(${bg})`,
         backgroundSize: 'cover',
@@ -21,7 +24,7 @@ const ProductDetails = () => {
         const newCart = { productName, brandName, price, type, photo, email };
         console.log(newCart);
 
-        fetch('http://localhost:5001/addToCart', {
+        fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/addToCart', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -39,8 +42,9 @@ const ProductDetails = () => {
                     })
                 }
 
-
-                
+                setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/products');
+                }, 1000);
             })
     }
     return (
@@ -54,11 +58,7 @@ const ProductDetails = () => {
                             <p className="font-rancho text-4xl text-center pt-2">{productName}</p>
                             <div className="overflow-x-auto">
                                 <table className="table">
-                                    <thead>
-                                        <tr>
-                                            <h2>Phone Details</h2>
-                                        </tr>
-                                    </thead>
+                                    
                                     <tbody>
                                         <tr>
                                             <td>Type</td>

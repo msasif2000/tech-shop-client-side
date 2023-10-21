@@ -31,7 +31,7 @@ const UpdateProduct = () => {
         const updateProduct = { productName, price, ratings, brandName, type, details, photo };
         console.log("update product", updateProduct);
 
-        fetch(`http://localhost:5001/products/${_id}`, {
+        fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -88,7 +88,7 @@ const UpdateProduct = () => {
                                             <span className="label-text font-bold">Ratings</span>
                                         </label>
                                         <label className="input-group">
-                                            <input required type="number" step="0.01" defaultValue={ratings} name="ratings" placeholder="Enter photo URL" className="input input-bordered w-full" />
+                                            <input required type="number" step="0.01" defaultValue={ratings} name="ratings" placeholder="Enter Ratings" className="input input-bordered w-full" />
                                         </label>
                                     </div>
 
@@ -121,7 +121,7 @@ const UpdateProduct = () => {
                                             <input required type="text" name="details" defaultValue={details} placeholder="Enter Product details" className="input input-bordered w-full" />
                                         </label>
                                     </div>
-
+s
                                 </div>
                             </div>
                             <div className="form-control">

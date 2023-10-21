@@ -28,7 +28,7 @@ const AddProduct = () => {
         const newProduct = { productName, price, ratings, brandName, type, details, photo };
         console.log(newProduct);
 
-        fetch('http://localhost:5001/products', {
+        fetch('https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ const AddProduct = () => {
                                             <span className="label-text font-bold">Ratings</span>
                                         </label>
                                         <label className="input-group">
-                                            <input required type="double" step="0.01" name="ratings" placeholder="Enter photo URL" className="input input-bordered w-full" />
+                                            <input required type="number" step="0.01" name="ratings" placeholder="Enter Ratings" className="input input-bordered w-full" />
                                         </label>
                                     </div>
 

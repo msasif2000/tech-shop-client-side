@@ -9,12 +9,13 @@ import { AuthContext } from '../Components/Provider/AuthProvider';
 
 const ProductCard = ({ product, products, setProducts }) => {
 
+    console.log(product, products);
     const { user } = useContext(AuthContext);
     const { productName, price, ratings, photo, _id, brandName } = product;
 
     const location = useLocation();
     const navigate = useNavigate();
-    //console.log(ratings)
+    const rating = parseFloat(ratings)
     const handleDelete = (_id) => {
         // console.log(_id);
         Swal.fire({
@@ -28,7 +29,7 @@ const ProductCard = ({ product, products, setProducts }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5001/products/${_id}`, {
+                fetch(`https://tech-ph-electronics-ow4bfvch6-mostafa-s-asifs-projects.vercel.app/products/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -37,7 +38,7 @@ const ProductCard = ({ product, products, setProducts }) => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your coffee card has been deleted.',
+                                'Your product information has been deleted.',
                                 'success'
                             )
 
@@ -58,7 +59,7 @@ const ProductCard = ({ product, products, setProducts }) => {
                     <p className='text-left'><span className='font-bold'>Name: </span>{productName}</p>
                     <p className='text-left'><span className='font-bold'>Brand: </span>{brandName}</p>
                     <p className='text-left'><span className='font-bold'>Price: </span>${price}</p>
-                    <p><ReactStarsRating value={`${ratings}`} primaryColor="rgba(255, 140, 71, 1)" isEdit={false} size={28} className="flex" /></p>
+                    <p><ReactStarsRating value={`${rating}`} primaryColor="rgba(255, 140, 71, 1)" isEdit={false} size={28} className="flex" /></p>
                 </div>
                 <div>
                     <div className="flex gap-4 items-center justify-center">
@@ -89,7 +90,8 @@ const ProductCard = ({ product, products, setProducts }) => {
 
 ProductCard.propTypes = {
     product: PropTypes.object.isRequired,
-    products: PropTypes.array.isRequired,
-    setProducts: PropTypes.func.isRequired,
+    products: PropTypes.object.isRequired,
+    setProducts: PropTypes.object.isRequired,
 };
 export default ProductCard;
+
