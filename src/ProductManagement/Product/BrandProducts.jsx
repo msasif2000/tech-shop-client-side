@@ -6,6 +6,7 @@ import bg1 from '../../assets/images/triang1.png';
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+
 const BrandProducts = () => {
     const bgStyle = {
         background: `url(${bg})`,

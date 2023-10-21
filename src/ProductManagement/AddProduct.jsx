@@ -81,7 +81,7 @@ const AddProduct = () => {
                                             <span className="label-text font-bold">Ratings</span>
                                         </label>
                                         <label className="input-group">
-                                            <input required type="number" step="0.01" name="ratings" placeholder="Enter photo URL" className="input input-bordered w-full" />
+                                            <input required type="double" step="0.01" name="ratings" placeholder="Enter photo URL" className="input input-bordered w-full" />
                                         </label>
                                     </div>
 
