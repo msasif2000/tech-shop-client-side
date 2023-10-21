@@ -2,7 +2,7 @@ import bg from '../../assets/images/bg-3.png'
 import logo from '../../assets/images/logo.avif'
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import './Navbar.css'
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { GrUserManager } from "react-icons/gr";
 import { AiOutlineShoppingCart } from 'react-icons/ai'
@@ -11,10 +11,25 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 const Navbar = () => {
 
     const { user, userLogout } = useContext(AuthContext);
+
     const location = useLocation();
     const navigate = useNavigate();
 
+    const currenMail = user?.email;
     const photoURL = user?.photoURL;
+    
+    const [cart, setCart] = useState([])
+    useEffect(() => {
+        fetch(`http://localhost:5001/addToCart/${currenMail}`)
+            .then(res => res.json())
+            .then(data => {
+                setCart(data);
+            })
+
+    }, [currenMail])
+    //console.log(cart);
+
+
     const handleLogout = () => {
         userLogout()
             .then(result => {
@@ -78,19 +93,16 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end  gap-4">
-                        {
+                        <Link to={`/cart/${currenMail}`}>
+                            {
 
-                            <div className="indicator">
-                                {
-                                    user ?
-                                        <span className="indicator-item badge badge-sm badge-secondary"></span>
-                                        :
-                                        ''
-                                }
-                                <div className="grid rounded-full p-2 bg-base-300 place-items-center"><AiOutlineShoppingCart className='text-2xl'></AiOutlineShoppingCart></div>
-                            </div>
+                                <div className="indicator">
+                                    <span className={cart.length ? 'indicator-item badge badge-sm badge-secondary' : ' '}></span>
+                                    <div className="grid rounded-full p-2 bg-base-300 place-items-center"><AiOutlineShoppingCart className='text-2xl'></AiOutlineShoppingCart></div>
+                                </div>
 
-                        }
+                            }
+                        </Link>
                         {
                             user ?
                                 <button onClick={handleLogout} className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Logout</button>

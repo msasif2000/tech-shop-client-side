@@ -18,6 +18,7 @@ import Products from './ProductManagement/Products';
 import UpdateProduct from './ProductManagement/UpdateProduct';
 import BrandProducts from './ProductManagement/Product/BrandProducts';
 import ProductDetails from './ProductManagement/ProductDetails';
+import Cart from './ProductManagement/Cart';
 
 
 
@@ -68,11 +69,11 @@ const router = createBrowserRouter([
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
         loader: ({ params }) => fetch(`http://localhost:5001/products/${params.id}`)
       },
-      // {
-      //   path: '/images/:bName',
-      //   element: <BrandCarousel></BrandCarousel>,
-      //   loader: ({params}) => fetch(`http://localhost:5001/images/${params.bName}`)
-      // }
+      {
+        path: '/cart/:email',
+        element: <Cart></Cart>,
+        loader: ({params}) => fetch(`http://localhost:5001/addToCart/${params.email}`)
+      }
     ]
   },
 ]);

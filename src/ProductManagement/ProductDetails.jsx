@@ -1,7 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import bg from '../assets/images/cool-background.png'
-import AddToCartButton from "./AddToCartButton";
+import { useContext } from "react";
+import { AuthContext } from "../Components/Provider/AuthProvider";
+import Swal from "sweetalert2";
+
 const ProductDetails = () => {
     const bgStyle = {
         background: `url(${bg})`,
@@ -9,17 +12,46 @@ const ProductDetails = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
+
+    const { user } = useContext(AuthContext);
     const product = useLoaderData();
-    //console.log(product);
+    const { productName, price, ratings, brandName, type, details, photo } = product;
+    const email = user?.email;
+    const handleAddToCart = () => {
+        const newCart = { productName, brandName, price, type, photo, email };
+        console.log(newCart);
+
+        fetch('http://localhost:5001/addToCart', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newCart)
+        })
+            .then(res => res.json())
+            .then(data => {
+                 if (data) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Product is added to the cart. Please Check your cart',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+
+
+                
+            })
+    }
     return (
         <div>
             <Navbar></Navbar>
             <div style={bgStyle}>
                 <div className="md:container mx-auto">
                     <div className="md:flex items-center justify-center md:gap-8 py-20">
-                        <img src={product.photo} alt="" className="h-[400px] rounded-lg md:mx-0 mx-auto" />
+                        <img src={photo} alt="" className="h-[400px] rounded-lg md:mx-0 mx-auto" />
                         <div className="text-white">
-                            <p className="font-rancho text-4xl text-center pt-2">{product.productName}</p>
+                            <p className="font-rancho text-4xl text-center pt-2">{productName}</p>
                             <div className="overflow-x-auto">
                                 <table className="table">
                                     <thead>
@@ -30,36 +62,38 @@ const ProductDetails = () => {
                                     <tbody>
                                         <tr>
                                             <td>Type</td>
-                                            <td>{product.type}</td>
+                                            <td>{type}</td>
                                         </tr>
 
                                         <tr>
                                             <td>Brand</td>
-                                            <td>{product.brandName}</td>
+                                            <td>{brandName}</td>
                                         </tr>
 
                                         <tr>
                                             <td>Price</td>
-                                            <td>${product.price}</td>
+                                            <td>${price}</td>
                                         </tr>
 
                                         <tr>
                                             <td>Brand</td>
-                                            <td>{product.brandName}</td>
+                                            <td>{brandName}</td>
                                         </tr>
                                         <tr>
                                             <td>Ratings</td>
-                                            <td>{product.ratings} out of 5</td>
+                                            <td>{ratings} out of 5</td>
                                         </tr>
                                         <tr>
                                             <td>Details</td>
-                                            <td>{product.details}</td>
+                                            <td>{details}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="flex md:justify-end justify-center pt-4">
-                                <AddToCartButton product = {product}></AddToCartButton>
+                            <div className="flex md:justify-end justify-center">
+                                <button className="bg-orange-600 px-3 py-1 rounded" onClick={handleAddToCart}>
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                     </div>
